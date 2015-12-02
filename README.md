@@ -20,6 +20,9 @@ at the top. (Instructions are included in the comments.)
 If you're starting from scratch, you'll need a 
 [Jekyll blog](http://jekyllrb.com/) first.
 Then you can link up this script to wherever you keep your blog.
+Depending on what kind of super-secret stuff you're writing, you may
+also want to modify the permissions on everything to something more
+secure. (E.g. 700.)
 
 ### Alias for awesomeness
 
@@ -28,6 +31,13 @@ Thankfully, this already exists. Just set up an alias in your shell's
 config folder. 
 If you don't know what this is, you're probably using BASH. 
 In which case this would be `~/.bashrc`.
+
+Suggested `.bashrc` setup:
+```bash
+    # Journal functions
+    export PATH=$PATH:/path/to/Journal.sh/
+    alias 'j=Journal.sh' # Much faster than typing journal
+```
 
 Personally, I like ZSH, which adds some nice functions to BASH.
 Here's what my `.zshrc` file currently looks like.
@@ -42,6 +52,13 @@ Or, a simple way to include this would be:
 ## Usage
 
 (TODO: Add output from --help)
+For now, just look through the script itself...
+
+### LaTex Customization (latex turned off for now though.)
+
+If you want to adjust any of the latex output, you can 
+put it in a `latex-options.sty` file. This'll be automagically
+included at the end of the Latex preamble.
 
 ## Contributing
 

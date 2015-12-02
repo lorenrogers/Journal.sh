@@ -17,10 +17,10 @@
 
 
 # Change this to match the path to your journal. Absolute path is best.
-# Don't put a trailing / on the end!
+# IMPORTANT: Don't put a trailing / on the end!
 # Or, if you like, you can put this script in that directory and use this:
 # JOURNAL_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-JOURNAL_DIR='/home/lorentrogers/test_journal'
+JOURNAL_DIR='/home/lorentrogers/journal'
 
 # Set script variables. Nothing to do here!
 readonly APPNAME=$(basename "${0%.sh}")
